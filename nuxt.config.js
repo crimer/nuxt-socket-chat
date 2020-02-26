@@ -6,8 +6,9 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    titleTemplate: "%s - " + process.env.npm_package_name,
+    // titleTemplate: "%s - " + process.env.npm_package_name,
     title: process.env.npm_package_name || "",
+    // title:  "",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -60,7 +61,8 @@ module.exports = {
       dark: true,
       themes: {
         dark: {
-          primary: colors.blue.darken2,
+          grey: '#424242',
+          blue: '#2196F3',
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
